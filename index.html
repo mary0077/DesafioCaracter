@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Caracteres</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #0077b6;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #0077b6;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #005f87;
+        }
+
+        button:active {
+            background-color: #003f5c;
+        }
+        footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #005f87;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Verificador de Caracteres</h1>
+    <button onclick="contarCaracteres()">Verificar</button>
+    <footer>
+      <p>Desenvolvido por <a href="https://mary0077.github.io/MarianaGomes/">Mariana Gomes</a> © 2024</p>
+  </footer>
+
+    <script>
+        function contarCaracteres() {
+            const palavra = prompt("Digite uma palavra:");
+            if (palavra) {
+                alert(`A palavra "${palavra}" tem ${palavra.length} caracteres.`);
+            } else {
+                alert("Nenhuma palavra foi digitada.");
+            }
+        }
+    </script>
+</body>
+</html>
